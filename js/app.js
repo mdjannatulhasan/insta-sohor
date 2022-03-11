@@ -16,10 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-  if(likedPostsId.indexOf(id) == -1){
     likedPostsId.push(id); // Here was a bug "push"
-  }
-    
     showPosts(posts);
 };
 
@@ -148,6 +145,7 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
     const likedPosts = getLikedPosts();
+    document.getElementById( "liked" ).innerHTML = ''; 
     likedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
