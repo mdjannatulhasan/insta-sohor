@@ -16,7 +16,10 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
+  if(likedPostsId.indexOf(id) == -1){
     likedPostsId.push(id); // Here was a bug "push"
+  }
+    
     showPosts(posts);
 };
 
