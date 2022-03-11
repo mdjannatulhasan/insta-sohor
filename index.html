@@ -84,10 +84,15 @@
                     <p class="font-size-lg">Javascript is a client-side scripting language. It is considered a lightweight programming language. When any browser loads a webpage, its interpreter checks and load the javascript file. It is asynchronous by nature. Asynchronous means, it does not block any other piece of code from execution. As HTML itself is not smart, JS handles most calculation parts and adds various events to HTML. It makes web pages more interactive.</p>
                 </div>
                 <div class="question mb-4">
-                    <h4 class="fw-normal">What does javascript evetloops do?</h4>
-                </div>
-                <div class="question mb-4">
                     <h4 class="fw-normal">What are the difference between localStorage and session storage?</h4>
+                    <p class="font-size-lg">Here are the main differences between localStorage and sessionStorage
+                        <ul>
+                            <li>LocalStorage stores data without any expiration but SessionStorage only available for one session, means if browser or page session ends, that session expires with all the data</li>
+                            <li>LocalStorage store capacity is 5MB/10MB but SessionStorage has only 5MB capacity</li>
+                            <li>LocalStorage needs to be cleared manually via javascript or manual action But SessionStorage clears when browser closes</li>
+                            <li>LocalStorage need to be created/started from JS codes and it might not be unique in different pages. But in SessionStorage unique page session get created with a tab.</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
             
